@@ -10,6 +10,25 @@
 	transform-origin: top;
 	transform: scaleY(0);
 	opacity: 0;
+
+	@include desktop-xs-only
+	{
+		top: 300px;
+		left: -330px;
+	}
+
+	@include tablette-only
+	{
+		top: 300px;
+		left: -110px;
+	}	
+
+	@include mobile-only
+	{
+		width: 300px;
+		top: 480px;
+		left: -60px;
+	}	
 }
 
 .animation
@@ -32,6 +51,25 @@
 	@include border;
 	transform-origin: top;
 	opacity: 0;
+
+	@include desktop-xs-only
+	{
+		top: 300px;
+		right: -330px
+	}
+
+	@include tablette-only
+	{
+		top: 680px;
+		left: -110px;
+	}	
+
+	@include mobile-only
+	{
+		width: 300px;
+		top: 940px;
+		left: -60px;
+	}		
 
 	&__subheading
 	{
@@ -57,6 +95,25 @@
 	width: 380px;
 	transform-origin: top;
 	opacity: 0;
+
+	@include desktop-xs-only
+	{
+		top: 680px;
+		left: -330px;
+	}
+
+	@include tablette-only
+	{
+		top: 1100px;
+		left: -100px;
+	}	
+
+	@include mobile-only
+	{
+		width: 300px;
+		top: 1400px;
+		left: -60px;
+	}		
 }
 
 .activites
@@ -68,12 +125,31 @@
 	left: -400px;
 	transform-origin: top;
 	opacity: 0;
+
+	@include desktop-xs-only
+	{
+		top: 1024px;
+		left: -330px;
+	}
+
+	@include tablette-only
+	{
+		top: 1700px;
+		left: -70px;
+	}	
+
+	@include mobile-only
+	{
+		width: 300px;
+		top: 2130px;
+		left: -60px;
+	}		
 }
 
 .competence
 {
 	position: absolute;
-	width: 340px;
+	width: 380px;
 	border-radius: 20px;
 	padding: 10px;
 	@include border;
@@ -83,7 +159,26 @@
 	&--dev
 	{
 		top: 110px;
-		right: -490px;
+		right: -530px;
+
+		@include desktop-xs-only
+		{
+			top: 720px;
+			right: -330px;
+		}
+
+		@include tablette-only
+		{
+			top: 1450px;
+			left: -100px;
+		}	
+
+		@include mobile-only
+		{
+			width: 300px;
+			top: 1770px;
+			left: -60px;
+		}		
 	}
 
 	&--video
@@ -91,6 +186,25 @@
 		top: 365px;
 		right: -450px;
 		width: 375px;
+
+		@include desktop-xs-only
+		{
+			top: 970px;
+			right: -330px;
+		}
+
+		@include tablette-only
+		{
+			top: 1850px;
+			left: -95px;
+		}	
+
+		@include mobile-only
+		{
+			width: 300px;
+			top: 2300px;
+			left: -60px;
+		}		
 	}
 
 	&__lien
@@ -130,6 +244,11 @@
 			margin-right: 5px;
 			margin-top: 5px;
 			margin-left: 5px;
+
+			@include mobile-only
+			{
+				width: 130px;
+			}	
 		}
 	}
 }
