@@ -13,8 +13,10 @@
 
 	@include desktop-xs-only
 	{
-		top: 150px;
+		top: 195px;
 		left: 50%;
+		width: 200px;
+		height: 200px;
 	}
 
 	&__img
@@ -22,6 +24,13 @@
 		margin-top: 5%;
 		border-radius: 100%;		
 		box-shadow: $box-shadow;
+
+
+		@include desktop-xs-only
+		{
+			width: 180px;
+			height: 180px;
+		}
 	}
 }
 
@@ -51,6 +60,11 @@
 	color: $white-color;
 	font-size: 1.6em;
 	z-index: 12;
+
+	@include desktop-xs-only
+	{
+		font-size: 1.3em;
+	}	
 
 	&--normal
 	{
@@ -146,37 +160,109 @@
 	&--profil
 	{
 		top: -35px;
-		left: -50px;	
+		left: -50px;
+
+		@include desktop-xs-only
+		{
+			top: 85px;
+			left: -80px
+		}
+
+		@include mobile-only
+		{
+			top: 215px;
+			left: 25px;
+		}		
 	}
 
 	&--formation
 	{
 		top: -35px;
 		right: -50px;
+
+		@include desktop-xs-only
+		{
+			top: 85px;
+			right: -80px;
+		}
+
+		@include mobile-only
+		{
+			top: 215px;
+			right: 25px;
+		}	
 	}
 
 	&--competences
 	{
 		top: 260px;
 		right: -50px;
+
+		@include desktop-xs-only
+		{
+			top: 205px;
+			right: 25px;
+		}	
+
+		@include mobile-only
+		{
+			top: 375px;
+			right: 25px;
+		}
 	}
 
 	&--langages
 	{
 		top: 110px;
 		right: -100px;
+
+		@include desktop-xs-only
+		{
+			top: 160px;
+			right: -50px;
+		}	
+
+		@include mobile-only
+		{
+			top: 295px;
+			right: 25px;
+		}
 	}
 
 	&--work
 	{
 		top: 110px;
 		left: -100px;
+
+		@include desktop-xs-only
+		{
+			top: 160px;
+			left: -50px; 
+		}	
+
+		@include mobile-only
+		{
+			top: 295px;
+			left: 25px;
+		}
 	}
 
 	&--activites
 	{
 		top: 260px;
 		left: -50px;
+
+		@include desktop-xs-only
+		{
+			top: 205px;
+			left: 25px;
+		}
+
+		@include mobile-only
+		{
+			top: 375px;
+			left: 25px;
+		}
 	}
 
 
@@ -190,16 +276,38 @@
 	left: 50%;
 	transform: translateX(-50%);
 	top: 180px;
+	width: 375px;
+
+	@include desktop-xs-only
+	{
+		top: 5px;
+	}
 
 	&__heading
 	{
 		font-size: 2.5em;
 		margin: 0;
+
+		@include desktop-xs-only
+		{
+			font-size: 2em;
+		}
 	}
 
 	&__sub
 	{
 		margin: 0;
+
+		@include desktop-xs-only
+		{
+			font-size: 1.4em;
+			margin-top: -10px;
+		}
+
+		@include mobile-only
+		{
+			font-size: 1.3em;
+		}	
 	}
 
 	&__text
@@ -207,6 +315,11 @@
 		margin: 0;
 		margin-top: -5px;
 		font-size: 0.9em;
+
+		@include desktop-xs-only
+		{
+			font-size: 0.8em;
+		}
 	}
 }
 
@@ -219,6 +332,28 @@
 	padding: 0 20px;
 	width: 350px;
 
+	@include desktop-xs-only
+	{
+		top: 1300px;
+	}
+
+	@include tablette-only
+	{
+		top: 2200px;
+	}
+
+	@include mobile-only
+	{
+		padding: 0;
+		left: 180px;
+	}	
+
+	@include mobile-only
+	{
+		padding: 0;
+		top: 2700px;
+	}		
+
 	&__heading
 	{
 		text-align: center;
@@ -227,7 +362,7 @@
 	&__row
 	{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	&__solo
@@ -239,6 +374,11 @@
 	&__iframe
 	{
 		margin-right: 15px;
+
+		@include mobile-only
+		{
+			margin-right: 5px;
+		}
 	}
 
 	&__text
