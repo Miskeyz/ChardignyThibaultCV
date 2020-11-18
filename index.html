@@ -19,13 +19,13 @@
 
 		<link rel="stylesheet" href="./css/style.css" />
 
+		<!-- Javascript -->
+
+		<script defer type="text/javascript" src="index.js"></script>
+
 		<!-- Titre de la page -->
 
 		<title>CV - Thibault Chardigny - Web Developer</title>
-
-		<!-- Favicon -->
-
-		<link rel="shortcut icon" type="./image/png" href="./images/logo_favicon.png"/>
 
 		<!-- RESPONSIVE -->
 
@@ -47,23 +47,32 @@
 
 			</div>
 
-			<div class="block-photo">
+			<div class="block-photo" id="photo">
 
 				<img src="./images/photo.jpg" alt="Thibault Chardigny" class="block-photo__img" />
 
-			</div>
+				<h2 class="photo__text" id="photo-content"></h2>
 
-			<div class="block-icon block-icon--profil">
+				<div class="block-icon block-icon--profil" id="profil">
 
-				<div class="block-icon__color">
+					<div class="block-icon__color">
 
-					<i class="fas fa-user block-icon__iframe"></i>
+						<i class="fas fa-user block-icon__iframe"></i>
+
+					</div>
 
 				</div>
 
-			</div>
+				<section class="profil" id="section-profil">
 
-			<div class="block-icon block-icon--formation">
+					<h2 class="section__heading profil__content">Profil</h2>
+
+					<p class="section__text profil__content">Technicien vidéo et opérateur média-serveur dans le domaine du spectacle vivant depuis 8 ans, je suis aujourd'hui en reconversion professionnelle dans le secteur du développement web front-end. Rigoureux, organisé et passionné, j'apprécie travailler en équipe, et me former à de nouvelles technologies. Le développement web est pour moi une nouvelle source d'inspiration et une nouvelle perspective professionelle.</p>
+					<p class="section__text profil__content">Ce domaine est relativement nouveau pour moi. Mon expérience acquise au cours de ma carrière dans le spectacle me permet aujourd'hui d'être efficace sur mes différents projets. Actuellement, je termine ma formation et je suis à la recherche d'un emploi de développeur web front-end.</p>
+
+				</section>
+
+				<div class="block-icon block-icon--formation" id="formation">
 
 				<div class="block-icon__color">
 
@@ -73,7 +82,33 @@
 
 			</div>
 
-			<div class="block-icon block-icon--competences">
+			<section class="formation" id="section-formation">
+
+				<h2 class="section__heading formation__content">Formations</h2>
+
+				<h3 class="formation__subheading formation__content">Baccalauréat scientifique option physique chimie</h3>
+				<p class="formation__text formation__content">Lycée Notre Dame des Minimes à Lyon 5 (2009)</p>
+
+				<h3 class="formation__subheading formation__content">Brevet de technicien supérieur audiovisuel</h3>
+				<p class="formation__text formation__content">Option exploitation des équipements</p>
+				<p class="formation__text formation__content">Lycée Léonard de Vinci à Villefontaine (2011)</p>
+
+				<h3 class="formation__subheading formation__content">Licence professionnelle ATC</h3>
+				<p class="formation__text formation__content">Activité et Technique de Communication</p>
+				<p class="formation__text formation__content">IUT de Chambéry (2012)</p>
+
+				<h3 class="formation__subheading formation__content">Formation média serveur Watchout</h3>
+				<p class="formation__text formation__content">Scaenicom Formations, une semaine (2015)</p>
+
+				<h3 class="formation__subheading formation__content">Formation média serveur Smode 2D/3D Compositing</h3>
+				<p class="formation__text formation__content">Oliverdy Formations, deux sessions d'une semaine (2017 & 2019)</p>
+
+				<h3 class="formation__subheading formation__content">Formation de developpeur web Junior en 6 mois</h3>
+				<p class="formation__text formation__content">Openclassroom (2020)</p>
+
+			</section>
+
+			<div class="block-icon block-icon--competences" id="competences-video">
 
 				<div class="block-icon__color">
 
@@ -83,7 +118,37 @@
 
 			</div>
 
-			<div class="block-icon block-icon--langages">
+			<section class="competence competence--video" id="section-competence">
+
+				<h2 class="section__heading section__heading--textcenter competence__content">Compétences vidéo et son</h2>
+
+				<div class="section__row competence__content">
+
+					<div class="competence__list">
+
+						<div class="competence__logos">
+
+							<a href="https://smode.fr/fr/" class="competence__lien" target="blank"><img src="./images/smode.png" alt="logo smode" class="competence__img" /></a>
+							<a href="https://www.modulo-pi.com/" class="competence__lien" target="blank"><img src="./images/modulo.png" alt="logo modulo" class="competence__img" /></a>
+							<a href="http://www.catalyst-v5.com/" class="competence__lien" target="blank"><img src="./images/catalyst.jpg" alt="logo catalyst" class="competence__img" /></a>
+							<img src="./images/vp.jpg" alt="logo vidéo-projecteur" class="competence__img"  />
+							<a href="https://www.analogway.com/" class="competence__lien" target="blank"><img src="./images/analog.png" alt="logo analog way" class="competence__img" /></a>
+							<img src="./images/led.png" alt="logo écran leds" />
+							<a href="https://www.ableton.com/" class="competence__lien" target="blank"><img src="./images/live.png" alt="logo ableton live" class="competence__img" /></a>
+							<a href="https://www.adobe.com/" class="competence__lien" target="blank"><img src="./images/ps.png" alt="logo photoshop" class="competence__img" /></a>
+							<a href="https://www.adobe.com/" class="competence__lien" target="blank"><img src="./images/pp.png" alt="logo premiere pro" class="competence__img" /></a>
+							
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<div class="block-icon block-icon--langages" id="langage">
 
 				<div class="block-icon__color">
 
@@ -93,7 +158,53 @@
 
 			</div>
 
-			<div class="block-icon block-icon--work">
+			<section class="competence competence--dev" id='section-langage'>
+
+				<h2 class="section__heading langage__content">Compétences en développement</h2>
+
+				<div class="section__row langage__content">
+
+					<div class="competence__list">
+
+						<div class="competence__logos">
+
+							<img src="./images/html.png" alt="logo html" />
+							<img src="./images/css.png" alt="logo css" />
+							<img src="./images/js.png" alt="logo js" />
+							<img src="./images/sass.png" alt="logo sass" />
+							<img src="./images/bootstrap.png" alt="logo bootstrap" />
+							
+
+						</div>
+
+						<div class="section__row">
+
+							<div class="competence__logos competence__logos--prochainement">
+
+								<p class="competence__logos-text">Notions :</p>
+								<img src="./images/php.png" alt="logo php" />
+								<img src="./images/mysql.png" alt="logo mysql" />
+
+							</div>
+
+							<div class="competence__logos competence__logos--prochainement">
+
+								<p class="competence__logos-text">Prochainement :</p>
+								<img src="./images/vue.jpg" alt="logo vue.js" />
+								<img src="./images/react.png" alt="logo react" />
+
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<div class="block-icon block-icon--work" id="work">
 
 				<div class="block-icon__color">
 
@@ -103,7 +214,26 @@
 
 			</div>
 
-			<div class="block-icon block-icon--activites">
+			<section class="work" id="section-work">
+
+				<h2 class="section__heading work__content">Expériences</h2>
+
+				<h3 class="formation__subheading work__content">Opérateur média serveur</h3>
+				<p class="formation__text work__content">Tournée de Niska (2020), tournées de Stars 80 (2018 - 2020), tournée de Black M (2017)</p>
+
+				<h3 class="formation__subheading work__content">Technicien mur d'image & cadreur</h3>
+				<p class="formation__text work__content">Tournées de Stars 80 (2015 - 2017), tournée de Danse avec les stars (2016), tournée de Jeff Panacloc (2015)</p>
+
+				<h3 class="formation__subheading work__content">Technicien mur d'image</h3>
+				<p class="formation__text work__content">Tournées de Orelsan (2018), tournée de Salut les copains (2014), tournée de Disco (2013 - 2014)</p>
+
+				<h3 class="formation__subheading work__content">Technicien vidéo</h3>
+				<p class="formation__text work__content">Conventions d'entreprises, évènementielle, festivals</p>
+				<p class="formation__text work__content">Entreprise Alabama-Media (2011 - 2020)</p>
+
+			</section>
+
+			<div class="block-icon block-icon--activites" id="activites">
 
 				<div class="block-icon__color">
 
@@ -113,7 +243,25 @@
 
 			</div>
 
-			<div class="contact">
+			<section class="activites" id="section-activites">
+
+				<h2 class="section__heading activites__content">Autres activités / hobbies :</h2>
+
+				<h3 class="formation__subheading activites__content">Projet musical “Miskeyz“ depuis 2015</h3>
+				<p class="formation__text activites__content"><a href="https://miskeyz.com/" class="contact__lien">Voir le site <strong>www.miskeyz.com</strong> (réalisé par mes soins !)</a></p>
+
+				<span class="formation__subheading activites__content">Jeux vidéos /</span>
+				<span class="formation__subheading activites__content">Badminton /</span>
+				<span class="formation__subheading activites__content">Cinéma /</span>
+				<span class="formation__subheading activites__content">Séries TV</span>
+				
+			</section>
+
+			</div>
+
+			
+
+			<section class="contact">
 
 				<h3 class="contact__heading">Contact</h3>
 
@@ -174,151 +322,7 @@
 
 				</div>
 
-			</div>
-
-			<section class="profil">
-
-				<h2 class="section__heading">Profile</h2>
-
-				<p class="section__text">Technicien vidéo et opérateur média-serveur dans le domaine du spectacle vivant depuis 8 ans, je suis aujourd'hui en reconversion professionnelle dans le secteur du développement web front-end. Rigoureux, organisé et passionné, j'apprécie travailler en équipe, et me former à de nouvelles technologies. Le développement web est pour moi une nouvelle source d'inspiration et une nouvelle perspective professionelle.</p>
-				<p class="section__text">Ce domaine est relativement nouveau pour moi. Mon expérience acquise au cours de ma carrière dans le spectacle me permet aujourd'hui d'être efficace sur mes différents projets. Actuellement, je termine ma formation et je suis à la recherche d'un emploi de développeur web front-end.</p>
-
 			</section>
-
-			<section class="formation">
-
-				<h2 class="section__heading">Formations</h2>
-
-				<h3 class="formation__subheading">Baccalauréat scientifique option physique chimie</h3>
-				<p class="formation__text">Lycée Notre Dame des Minimes à Lyon 5 (2009)</p>
-
-				<h3 class="formation__subheading">Brevet de technicien supérieur audiovisuel</h3>
-				<p class="formation__text">Option exploitation des équipements</p>
-				<p class="formation__text">Lycée Léonard de Vinci à Villefontaine (2011)</p>
-
-				<h3 class="formation__subheading">Licence professionnelle ATC</h3>
-				<p class="formation__text">Activité et Technique de Communication</p>
-				<p class="formation__text">IUT de Chambéry (2012)</p>
-
-				<h3 class="formation__subheading">Formation média serveur Watchout</h3>
-				<p class="formation__text">Scaenicom Formations, une semaine (2015)</p>
-
-				<h3 class="formation__subheading">Formation média serveur Smode 2D/3D Compositing</h3>
-				<p class="formation__text">Oliverdy Formations, deux sessions d'une semaine (2017 & 2019)</p>
-
-				<h3 class="formation__subheading">Formation de developpeur web Junior en 6 mois</h3>
-				<p class="formation__text">Openclassroom (2020)</p>
-
-			</section>
-
-			<section class="competence competence--dev">
-
-				<h2 class="section__heading">Compétences en développement</h2>
-
-				<div class="section__row">
-
-					<div class="competence__list">
-
-						<div class="competence__logos">
-
-							<img src="./images/html.png" alt="logo html" />
-							<img src="./images/css.png" alt="logo css" />
-							<img src="./images/js.png" alt="logo js" />
-							<img src="./images/sass.png" alt="logo sass" />
-							<img src="./images/bootstrap.png" alt="logo bootstrap" />
-							
-
-						</div>
-
-						<div class="section__row">
-
-							<div class="competence__logos competence__logos--prochainement">
-
-								<p class="competence__logos-text">Notions :</p>
-								<img src="./images/php.png" alt="logo php" />
-								<img src="./images/mysql.png" alt="logo mysql" />
-
-							</div>
-
-							<div class="competence__logos competence__logos--prochainement">
-
-								<p class="competence__logos-text">Prochainement :</p>
-								<img src="./images/vue.jpg" alt="logo vue.js" />
-								<img src="./images/react.png" alt="logo react" />
-
-							</div>
-
-						</div>
-
-
-					</div>
-
-				</div>
-
-			</section>
-
-			<section class="work">
-
-				<h2 class="section__heading">Expériences</h2>
-
-				<h3 class="formation__subheading">Opérateur média serveur</h3>
-				<p class="formation__text">Tournée de Niska (2020), tournées de Stars 80 (2018 - 2020), tournée de Black M (2017)</p>
-
-				<h3 class="formation__subheading">Technicien mur d'image & cadreur</h3>
-				<p class="formation__text">Tournées de Stars 80 (2015 - 2017), tournée de Danse avec les stars (2016), tournée de Jeff Panacloc (2015)</p>
-
-				<h3 class="formation__subheading">Technicien mur d'image</h3>
-				<p class="formation__text">Tournées de Orelsan (2018), tournée de Salut les copains (2014), tournée de Disco (2013 - 2014)</p>
-
-				<h3 class="formation__subheading">Technicien vidéo</h3>
-				<p class="formation__text">Conventions d'entreprises, évènementielle, festivals</p>
-				<p class="formation__text">Entreprise Alabama-Media (2011 - 2020)</p>
-
-			</section>
-
-			<section class="competence competence--video">
-
-				<h2 class="section__heading section__heading--textcenter">Compétences vidéo et son</h2>
-
-				<div class="section__row">
-
-					<div class="competence__list">
-
-						<div class="competence__logos">
-
-							<a href="https://smode.fr/fr/" class="competence__lien" target="blank"><img src="./images/smode.png" alt="logo smode" class="competence__img" /></a>
-							<a href="https://www.modulo-pi.com/" class="competence__lien" target="blank"><img src="./images/modulo.png" alt="logo modulo" class="competence__img" /></a>
-							<a href="http://www.catalyst-v5.com/" class="competence__lien" target="blank"><img src="./images/catalyst.jpg" alt="logo catalyst" class="competence__img" /></a>
-							<img src="./images/vp.jpg" alt="logo vidéo-projecteur" class="competence__img"  />
-							<a href="https://www.analogway.com/" class="competence__lien" target="blank"><img src="./images/analog.png" alt="logo analog way" class="competence__img" /></a>
-							<img src="./images/led.png" alt="logo écran leds" />
-							<a href="https://www.ableton.com/" class="competence__lien" target="blank"><img src="./images/live.png" alt="logo ableton live" class="competence__img" /></a>
-							<a href="https://www.adobe.com/" class="competence__lien" target="blank"><img src="./images/ps.png" alt="logo photoshop" class="competence__img" /></a>
-							<a href="https://www.adobe.com/" class="competence__lien" target="blank"><img src="./images/pp.png" alt="logo premiere pro" class="competence__img" /></a>
-							
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</section>
-
-			<section class="activites">
-
-				<h2 class="section__heading">Autres activités / hobbies :</h2>
-
-				<h3 class="formation__subheading">Projet musical “Miskeyz“ depuis 2015</h3>
-				<p class="formation__text"><a href="https://miskeyz.com/" class="contact__lien">Voir le site <strong>www.miskeyz.com</strong> (réalisé par mes soins !)</a></p>
-
-				<span class="formation__subheading">Jeux vidéos /</span>
-				<span class="formation__subheading">Badminton /</span>
-				<span class="formation__subheading">Cinéma /</span>
-				<span class="formation__subheading">Séries TV</span>
-				
-			</section>
-
 
 		</main>
 
