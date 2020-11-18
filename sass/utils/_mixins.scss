@@ -4,3 +4,86 @@
 	padding: 10px;
 	box-shadow: $box-shadow;
 }
+
+@keyframes animCard
+{
+	0%
+	{
+		opacity: 0;
+		transform: scaleY(0);
+	}
+
+	25%
+	{
+		opacity: 1;
+	}
+
+	100%
+	{
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
+
+@keyframes textOpacity
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes rotate
+{
+	0%
+	{
+		transform: rotate(0);
+	}
+
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fade-in-out
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 0.3;
+	}
+}
+
+@mixin desktop-xs-only
+{
+	@media screen and (max-width: map-get($breakpoints, desktop))
+	{
+		@content;
+	}
+}
+
+@mixin tablette-only
+{
+	@media screen and (max-width: map-get($breakpoints, tablette))
+	{
+		@content;
+	}
+}
+
+@mixin mobile-only
+{
+	@media screen and (max-width: map-get($breakpoints, mobile))
+	{
+		@content;
+	}
+}

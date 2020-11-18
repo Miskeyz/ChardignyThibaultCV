@@ -8,3 +8,10 @@ $text-font: 'Roboto', sans-serif;
 $gradient: linear-gradient(158deg, rgba(0,88,177,1) 0%, rgba(57,119,181,1) 100%);
 
 $box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.75);
+
+$breakpoints: 
+(
+	mobile: 500px,
+	tablette: 768px,
+	desktop: 1380px
+);
