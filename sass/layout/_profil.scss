@@ -149,7 +149,7 @@
 .competence
 {
 	position: absolute;
-	width: 380px;
+	width: 400px;
 	border-radius: 20px;
 	padding: 10px;
 	@include border;
@@ -170,7 +170,7 @@
 		@include tablette-only
 		{
 			top: 1440px;
-			left: -100px;
+			left: -110px;
 		}	
 
 		@include mobile-only
@@ -235,6 +235,11 @@
 			font-size: 0.9em;
 		}
 
+		&--langages
+		{
+			margin-left: 20px;
+		}
+
 		&--prochainement
 		{
 			@include border;
@@ -244,11 +249,12 @@
 			width: 150px;
 			margin-right: 5px;
 			margin-top: 5px;
-			margin-left: 5px;
+			margin-left: 110px;
 
 			@include mobile-only
 			{
-				width: 130px;
+				width: 150px;
+				margin-left: 70px;
 			}	
 		}
 	}
@@ -293,5 +299,35 @@
 		font-size: 0.9em;
 		font-family: $text-font;
 		list-style-type: square;
+	}
+}
+
+.close-button
+{
+	position: absolute;
+	right: 10px;
+	color: $icon-color;
+	z-index: 2;
+	cursor: pointer;
+
+	@include tablette-only
+	{
+		right: 4px;
+		top: 4px;
+	}
+
+	&:hover, &:focus
+	{
+		color: black;
+	}
+
+	&__icon
+	{
+		font-size: 1.4em;
+
+		@include tablette-only
+		{
+			font-size: 1.2em;
+		}
 	}
 }
