@@ -1,7 +1,7 @@
 .profil
 {
 	position: absolute;
-	top: -300px;
+	top: -320px;
 	left: -500px;
 	width: 400px;
 	text-align: justify;
@@ -45,9 +45,9 @@
 .formation
 {
 	position: absolute;
-	top: -310px;
-	right: -500px;
-	width: 400px;
+	top: -320px;
+	right: -620px;
+	width: 500px;
 	@include border;
 	transform-origin: top;
 	opacity: 0;
@@ -90,11 +90,29 @@
 {
 	position: absolute;
 	@include border;
-	top: 83px;
-	left: -530px;
-	width: 380px;
+	top: 43px;
+	left: -605px;
+	width: 450px;
 	transform-origin: top;
 	opacity: 0;
+
+	&__text
+	{
+		font-size: 0.8em;
+		margin-top: 0;
+		font-family: $text-font;
+	}
+
+	&__lien
+	{
+		text-decoration: none;
+		color: black;
+
+		&:hover
+		{
+			text-decoration: underline;
+		}
+	}
 
 	@include desktop-xs-only
 	{
@@ -121,7 +139,7 @@
 	@include border;
 	position: absolute;
 	width: 330px;
-	top: 425px;
+	top: 470px;
 	left: -400px;
 	transform-origin: top;
 	opacity: 0;
@@ -158,8 +176,8 @@
 
 	&--dev
 	{
-		top: 105px;
-		right: -530px;
+		top: 140px;
+		right: -550px;
 
 		@include desktop-xs-only
 		{
@@ -183,7 +201,7 @@
 
 	&--video
 	{
-		top: 365px;
+		top: 385px;
 		right: -450px;
 		width: 375px;
 
@@ -231,8 +249,14 @@
 		&-text
 		{
 			margin: 5px;
+			margin-bottom: 0px;
 			font-family: $text-font;
 			font-size: 0.9em;
+		}
+
+		&--image
+		{
+			width: 60px;
 		}
 
 		&--langages
@@ -330,4 +354,19 @@
 			font-size: 1.2em;
 		}
 	}
+}
+
+.competence-list
+{
+	text-align: justify;
+	list-style-type: none;
+	font-size: 0.8em;
+	font-family: $text-font;
+	margin-right: 15px;
+	margin-left: -25px;
+}
+
+li
+{
+	margin-bottom: 8px;
 }
